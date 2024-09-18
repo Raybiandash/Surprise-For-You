@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #a855f7, #22c55e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    transition: transform 1s ease-in-out;
+    position: relative;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    background-color: #9333ea;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #7c3aed;
+}
+
+.love-message h1 {
+    font-size: 3rem;
+    animation: fadeIn 2s ease forwards;
+}
+
+.love-message p {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    animation: fadeIn 3s ease forwards;
+}
+
+.question-box {
+    animation: appear 1s ease forwards;
+}
+
+.choices {
+    margin-top: 20px;
+}
+
+.choice-btn {
+    margin: 10px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

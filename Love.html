@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise Message for You</title>
+    <link rel="stylesheet" href="Love.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Question box -->
+        <div id="question-box" class="question-box">
+            <h1 id="question">Welcome, my love!</h1>
+            <p id="instructions">Let's answer a few questions first 😘</p>
+            <div id="choices" class="choices hidden">
+                <button class="choice-btn" id="yes-btn">Yes</button>
+                <button class="choice-btn" id="no-btn">No</button>
+            </div>
+            <button id="next-btn">Start</button>
+        </div>
+
+        <!-- Love message -->
+        <div id="love-message" class="love-message hidden">
+            <h1>I ❤️ You!</h1>
+            <p>You're my favorite person in the world!</p>
+            <button id="reset-btn">Do it again? 💕</button>
+        </div>
+    </div>
+    <script src="Love.js"></script>
+</body>
+</html>
